@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age & Gender Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🔍 AI Age & Gender Prediction</h1>
+        
+        <!-- File Upload Section -->
+        <div class="file-upload">
+            <input type="file" id="imageUpload" accept="image/*" onchange="updateFileName()">
+            <span id="file-name">📂 No file chosen</span>
+            <button class="btn upload-btn" onclick="uploadImage()">Upload & Predict</button>
+        </div>
+
+        <!-- Webcam Section -->
+        <div class="webcam-section">
+            <video id="video" autoplay></video>
+            <button class="btn capture-btn" onclick="captureImage()">Capture & Predict</button>
+            <canvas id="canvas" style="display: none;"></canvas>
+            <img id="capturedImage" class="preview-image" style="display: none;">
+        </div>
+
+        <!-- Results Display -->
+        <div class="results">
+            <h2>📝 Prediction Result</h2>
+            <p id="result">Awaiting input...</p>
+        </div>
+
+        <!-- Prediction History -->
+        <div class="history-container">
+            <h2>📜 Prediction History</h2>
+            <div id="history">No history yet</div>
+        </div>
+    </div>
+
+    <!-- Popup Notification -->
+    <div id="popup" class="popup"></div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
