@@ -11,7 +11,7 @@ app = Flask(__name__)
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 # ✅ Load Vision Transformer Model
-MODEL_NAME = "google/vit-base-patch16-224-in21k"
+MODEL_NAME = "google/vit-small-patch16-224-in21k"
 
 def download_file_from_google_drive(file_id, destination):
     URL = "https://docs.google.com/uc?export=download"
