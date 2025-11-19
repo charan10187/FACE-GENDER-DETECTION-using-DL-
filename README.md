@@ -36,7 +36,7 @@ Identifies or labels faces based on similarity threshold.
 
 Clone the repository and install the dependencies:
 
-git clone https://github.com/<your-username>/Face-Recognition.git
+git clone https://github.com/charan10187/Face-Recognition.git
 cd Face-Recognition
 pip install -r requirements.txt
 
@@ -63,8 +63,8 @@ Recognized faces highlighted in real-time video feed with labels.
 
 🧑‍💻 Author
 
-[Your Name]
+S.SRI CHARAN
 
-GitHub: @yourusername
+GitHub: charan10187
 
-LinkedIn: [Your LinkedIn Profile]
+LinkedIn: sri-charan-surepallii
