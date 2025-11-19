@@ -36,7 +36,7 @@ Identifies or labels faces based on similarity threshold.
 
 Clone the repository and install the dependencies:
 
-git clone https://github.com/charan10187/Face-Recognition.git
+git clone https://github.com/charan10187/FACE-GENDER-DETECTION-using-DL-/tree/main
 cd Face-Recognition
 pip install -r requirements.txt
 
